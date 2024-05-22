@@ -1,1 +1,6 @@
-web: gunicorn 'eblog.wsgi'
+
+web: gunicorn eblog.wsgi --log-file - 
+
+migrate: python manage.py migrate --noinput
+
+static: python manage.py collectstatic --noinput
