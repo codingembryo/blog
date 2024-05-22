@@ -192,7 +192,6 @@ python3-openid==3.2.0
 pytube==12.1.0
 pytweening==1.0.4
 pytz==2022.4
-pywin32==305
 pywinpty==2.0.10
 PyYAML==6.0
 pyzmq==24.0.1
