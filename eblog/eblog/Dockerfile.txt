@@ -1,0 +1,20 @@
+FROM Python 3.10.7
+
+# Set working directory
+WORKDIR /app
+
+# Copy requirements file
+COPY requirements.txt .
+
+# Install dependencies
+RUN pip install --upgrade pip && \
+    pip install -r requirements.txt
+
+# Copy the rest of your application code
+COPY . .
+
+# Set environment variables if needed
+ENV VARIABLE_NAME value
+
+# Command to run the application
+CMD ["python", "app.py"]
